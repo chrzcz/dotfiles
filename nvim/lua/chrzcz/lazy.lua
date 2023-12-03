@@ -12,20 +12,29 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-	{'rose-pine/neovim', name = 'rose-pine'},
-	{'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}, tag = '0.1.4'},
-	{
-		'nvim-treesitter/nvim-treesitter', 
-		dependencies = 
-		{
-			'nvim-treesitter/nvim-treesitter-textobjects',
-			'nvim-treesitter/nvim-treesitter-context'
-		}, 
-		build = ':TSUpdate'
-	},
-	{'mbbill/undotree'},
-	{'theprimeagen/harpoon'},
-	{'tpope/vim-fugitive'},
-	{'neovim/nvim-lspconfig'},
+    {'catppuccin/nvim', name = 'catppuccin'},
+    {'nvim-telescope/telescope.nvim', dependencies = {'nvim-lua/plenary.nvim'}, tag = '0.1.4'},
+    {
+        'nvim-treesitter/nvim-treesitter',
+        dependencies =
+        {
+            'nvim-treesitter/nvim-treesitter-textobjects',
+            'nvim-treesitter/nvim-treesitter-context'
+        },
+        build = ':TSUpdate'
+    },
+    {'mbbill/undotree'},
+    {'theprimeagen/harpoon'},
+    {'tpope/vim-fugitive'},
+    {'neovim/nvim-lspconfig'},
+    {
+        'hrsh7th/nvim-cmp',
+        dependencies =
+        {
+            'hrsh7th/cmp-nvim-lsp',
+            'L3MON4D3/LuaSnip',
+            'saadparwaiz1/cmp_luasnip',
+        }
+    },
     {'ThePrimeagen/refactoring.nvim', dependencies = {'nvim-lua/plenary.nvim', 'nvim-treesitter/nvim-treesitter'}}
 })

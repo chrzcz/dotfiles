@@ -61,7 +61,7 @@ Statusline.active = function()
   return table.concat {
     "%#Statusline#",
     mode(),
-    "",
+    "",
     filepath(),
     filename(),
     " %m",

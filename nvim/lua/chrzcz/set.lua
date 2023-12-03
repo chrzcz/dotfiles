@@ -15,6 +15,7 @@ vim.opt.undofile = true
 vim.opt.incsearch = true
 vim.opt.scrolloff = 10
 vim.opt.colorcolumn = '80'
+vim.opt.mouse = ''
 
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
